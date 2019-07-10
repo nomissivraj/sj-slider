@@ -1,3 +1,33 @@
+.sj-slider-container {
+    position: relative;
+    padding: 40px 0 10px 0;
+}
+
 .sj-slider {
     width: 100%;
+}
+
+.sj-slider-output,
+.sj-slider-label {
+    width: auto;
+    min-width: 20px;
+    height: 15px;
+    padding: 8px 10px;
+    color: #333;
+    font-weight: bold;
+    background: rgb(216, 216, 216);
+    border: 2px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    position: absolute;
+}
+
+
+.sj-slider-label {
+    top: 0;
+    left: 0;
+}
+
+.sj-slider-output {
+    top: 0;
+    right: 0;
 }

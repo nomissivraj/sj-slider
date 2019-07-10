@@ -15,7 +15,9 @@
 
         <h1>SJ Slider Demo</h1>
         <div class="sj-slider-container">
-            <input class="sj-slider" type="range">
+            <label class="sj-slider-label" for="slider-1">Slider 1</label>
+            <output id="slider-1-output" for="slider-1" class="sj-slider-output">null</output>
+            <input id="slider-1" class="sj-slider" type="range" data-slider-category="category-1" data-slider-output="slider-1-output" data-slider-direction="default">
         </div>
 
     </main>
