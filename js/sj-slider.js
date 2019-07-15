@@ -41,6 +41,21 @@ var sjSlider = {};
             //Get options for current slider from matching opts object
             let elOpts = self.matchingOpts(opts.sliders, 'category', category);
             self.setAttributes(el[i], elOpts);
+            
+            for (let prop in elOpts) {
+                if (prop === 'customText') {
+                    // Process custom text and apply it to output
+
+                    // Check if reverse order - then loop through customText in reverse order
+
+                    // Based on min/max props or amount of customText set the min-max of slider
+
+                    // Work out how to associate text to numbers - with unknown amount
+
+                } else {
+                    // If not customText property then simply grab slider value and add to 
+                }
+            }
         }
     }
 
