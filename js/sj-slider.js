@@ -9,10 +9,10 @@ let sliderOpts = {
         {
             category: 'Category-2',
             textSlider: true,
-            customText: ['text1', 'text2'],
+            customText: ['text1', 'text2', 'text3', 'text4', 'text5'],
             reversed: false
         }//,
-        // {
+        // { IF DEFINED BUT NO SLIDER PRESENT - MAKE ONE IN CONTAINER?
         //     category: 'Category-3',
         //     textSlider: true,
         //     customText: ['string1', 'string2'],
@@ -44,6 +44,12 @@ var sjSlider = {};
             
             for (let prop in elOpts) {
                 if (prop === 'customText') {
+                    let steps = elOpts[prop].length - 1;
+                    el[i].setAttribute('min', 0);
+                    el[i].setAttribute('max', steps);
+                    for (let i = 0; i <  steps; i++) {
+
+                    }
                     // Process custom text and apply it to output
 
                     // Check if reverse order - then loop through customText in reverse order
