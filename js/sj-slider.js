@@ -44,18 +44,18 @@ var sjSlider = {};
             
             for (let prop in elOpts) {
                 if (prop === 'customText') {
+                    // Based on min/max props or amount of customText set the min-max of slider
                     let steps = elOpts[prop].length - 1;
                     el[i].setAttribute('min', 0);
                     el[i].setAttribute('max', steps);
+                    
+                    // Process custom text and apply it to output
                     for (let i = 0; i <  steps; i++) {
 
+                         // Check if reverse order - then loop through customText in reverse order
+
                     }
-                    // Process custom text and apply it to output
-
-                    // Check if reverse order - then loop through customText in reverse order
-
-                    // Based on min/max props or amount of customText set the min-max of slider
-
+                    
                     // Work out how to associate text to numbers - with unknown amount
 
                 } else {
