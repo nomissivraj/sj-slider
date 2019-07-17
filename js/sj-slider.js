@@ -49,11 +49,16 @@ var sjSlider = {};
                     el[i].setAttribute('min', 0);
                     el[i].setAttribute('max', steps);
                     
+                    let textNum = {};
+
                     // Process custom text and apply it to output
-                    for (let i = 0; i <  steps; i++) {
-
+                    for (let i = 0; i < steps; i++) {
                          // Check if reverse order - then loop through customText in reverse order
+                        console.log( elOpts[prop][i])
+                        textNum[elOpts[prop][i]] = i;
 
+                        let test = document.querySelector('#'+output);
+                        console.log(test)
                     }
                     
                     // Work out how to associate text to numbers - with unknown amount
