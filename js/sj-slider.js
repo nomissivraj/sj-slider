@@ -89,6 +89,13 @@ var sjSlider = {};
         }
     }
 
+    self.listen = (el) => {
+        console.log('listening');
+        el.addEventListener('input', () => {
+            self.update();
+        });
+    }
+
     self.update = () => {
         console.log('update')
     }
